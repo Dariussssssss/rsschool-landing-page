@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="src/assets/icons/coffee-cup.svg">
+  <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
 <header>
-  <div class="header__wrapper">
-    <div class="logo"></div>
+  <div class="header__wrapper container">
+    <a href="index.html" class="logo" aria-label="Resource Coffee House — на главную"></a>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="#" class="nav__link">Favorite coffee</a></li>
@@ -17,7 +22,7 @@
         <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
       </ul>
     </nav>
-    <div class="header__container">
+    <div class="header__actions">
       <div class="theme">
         <span></span><span></span>
       </div>
@@ -29,7 +34,7 @@
   </div>
 </header>
 <main>
-  <div class="main__wrapper">
+  <div class="main__wrapper container">
     <section class="menu">
       <h1>Behind each of our cups hides an amazing surprise</h1>
       <div class="buttons">
@@ -69,7 +74,7 @@
   </div>
 </main>
 <footer>
-  <div class="footer__wrapper">
+  <div class="footer__wrapper container">
     <div class="footer__content">
       <h2 class="footer__title">
         Sip, Savor, Smile. It’s coffee time!
@@ -88,5 +93,6 @@
     </div>
   </div>
 </footer>
+<script type="module" src="src/scripts/menu.js"></script>
 </body>
 </html>

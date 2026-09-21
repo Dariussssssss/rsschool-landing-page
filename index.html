@@ -4,32 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee-House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="src/assets/icons/coffee-cup.svg">
+  <link rel="stylesheet" href="src/styles/main.css">
 </head>
-<body>
+<body class="light-theme">
 <header>
-  <div class="header__wrapper">
-    <div class="logo"></div>
+  <div class="header__wrapper container">
+    <a href="index.html" class="logo" aria-label="Resource Coffee House — на главную"></a>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Favorite coffee</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Mobile app</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+        <li class="nav__item"><a href="#favorite-coffee" class="nav__link link">Favorite coffee</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link link">About</a></li>
+        <li class="nav__item"><a href="#mobile-app" class="nav__link link">Mobile app</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link link">Contact us</a></li>
       </ul>
     </nav>
-    <div class="header__container">
+    <div class="header__actions">
       <div class="theme">
-        <span></span><span></span>
+        <button class="theme-toggle theme-toggle--light" type="button" aria-label="Светлая тема">
+          <span class="icon icon--sun" aria-hidden="true"></span>
+        </button>
+        <button class="theme-toggle theme-toggle--dark" type="button" aria-label="Тёмная тема">
+          <span class="icon icon--moon" aria-hidden="true"></span>
+        </button>
       </div>
-      <div class="burger-menu">
-        <span>Menu</span>
-        <span></span>
-      </div>
+      <a href="menu.html" class="menu-link link">
+        <span class="burger-menu__text">Menu</span>
+        <span class="icon icon--coffee-cup menu-link__icon" aria-hidden="true"></span>
+      </a>
     </div>
   </div>
 </header>
 <main>
-  <div class="main__wrapper">
+  <div class="main__wrapper container">
     <section class="hero">
       <div class="hero__wrapper">
         <h1 class="hero__title">Enjoy premium coffee at our charming cafe</h1>
@@ -39,7 +51,7 @@
         <a href="menu.html" class="button">Menu</a>
       </div>
     </section>
-    <section class="favorite-coffee">
+    <section class="favorite-coffee" id="favorite-coffee">
       <div class="favorite-coffee__wrapper">
         <h2 class="section__title">Choose your favorite coffee</h2>
         <div class="slider">
@@ -60,7 +72,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__wrapper">
         <h2 class="section__text">Resource is the perfect and cozy place where you can enjoy a variety of hot beverages,
           relax, catch up with friends, or get some work done.</h2>
@@ -76,20 +88,21 @@
         </ul>
       </div>
     </section>
-    <section class="mobile-app">
+    <section class="mobile-app" id="mobile-app">
       <div class="mobile-app__wrapper">
         <h2 class="section__title">Download our app<br> to start ordering</h2>
-        <p class="text">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-     <div class="mobile-app__button">
-       <button class="apple"></button>
-       <button class="google"></button>
-     </div>
+        <p class="text">Download the Resource app today and experience the comfort of ordering your favorite coffee from
+          wherever you are</p>
+        <div class="mobile-app__button">
+          <button class="apple"></button>
+          <button class="google"></button>
+        </div>
       </div>
     </section>
   </div>
 </main>
 <footer>
-  <div class="footer__wrapper">
+  <div class="footer__wrapper container" id="contact">
     <div class="footer__content">
       <h2 class="footer__title">
         Sip, Savor, Smile. It’s coffee time!
@@ -102,11 +115,12 @@
     </div>
     <div class="contacts">
       <p>Contact us</p>
-      <p>8558 Green Rd.,  LA</p>
+      <p>8558 Green Rd., LA</p>
       <p>+1 (603) 555-0123</p>
       <p>Mon–Sat: 9:00–23:00</p>
     </div>
   </div>
 </footer>
+<script type="module" src="src/scripts/home.js"></script>
 </body>
 </html>
