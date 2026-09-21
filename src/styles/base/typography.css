@@ -5,53 +5,54 @@ body {
   transition: background-color var(--transition), color var(--transition);
 }
 
-._accent {
-  font-style: italic
+.text-accent {
+  font-style: italic;
+  color: var(--text-accent);
 }
 
-.title-1 {
+.heading-hero {
   font-size: 72px;
   font-weight: 600;
   line-height: 105%;
 }
 
-.title-2 {
+.heading-section {
   font-size: 60px;
   font-weight: 600;
   line-height: 125%;
 }
 
-.title-3 {
+.heading-modal {
   font-size: 24px;
   font-weight: 600;
   line-height: 125%;
 }
 
-.title-4 {
+.heading-sub{
   font-size: 42px;
   font-weight: 600;
   line-height: 115%;
 }
 
-.title-5 {
+.heading-card {
   font-size: 32px;
   font-weight: 600;
   line-height: 125%;
 }
 
-.link, .button {
+.link {
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
 }
 
-.medium {
+.text-body {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
 }
 
-.caption {
+.text-caption {
   font-size: 10px;
   font-weight: 600;
   line-height: 140%;

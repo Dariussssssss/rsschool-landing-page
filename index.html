@@ -34,7 +34,7 @@
         </button>
       </div>
       <a href="menu.html" class="menu-link link">
-        <span class="burger-menu__text">Menu</span>
+        <span>Menu</span>
         <span class="icon icon--coffee-cup menu-link__icon" aria-hidden="true"></span>
       </a>
     </div>
@@ -43,12 +43,29 @@
 <main>
   <div class="main__wrapper container">
     <section class="hero">
+      <video
+        class="hero__video"
+        poster="src/assets/img/container.png"
+        autoplay
+        muted
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+      >
+        <source src="src/assets/video/hero.webm" type="video/webm">
+        <source src="src/assets/video/hero.mp4" type="video/mp4">
+      </video>
       <div class="hero__wrapper">
-        <h1 class="hero__title">Enjoy premium coffee at our charming cafe</h1>
-        <p class="hero__text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a
+        <h1 class="hero__title heading-hero"><span class="text-accent">Enjoy</span> premium coffee at our charming cafe
+        </h1>
+        <p class="hero__text text-body">With its inviting atmosphere and delicious coffee options, the Coffee House
+          Resource is a
           popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
           beverage.</p>
-        <a href="menu.html" class="button">Menu</a>
+        <a href="menu.html" class="menu-link button menu-link--lg">
+          <span>Menu</span>
+          <span class="icon icon--coffee-cup menu-link__icon" aria-hidden="true"></span>
+        </a>
       </div>
     </section>
     <section class="favorite-coffee" id="favorite-coffee">

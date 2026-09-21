@@ -1,0 +1,9 @@
+.menu-link {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu-link__icon {
+  height: 20px;
+  width: 20px;
+}

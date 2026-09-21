@@ -6,9 +6,11 @@
 @import './layout/container.css';
 @import './layout/header.css';
 
-@import './components/button.css';
-@import './components/card.css';
 @import './components/icons.css';
+@import './components/button.css';
+@import './components/menu_button.css';
+@import './components/slider.css';
+@import './components/card.css';
 
 @import './pages/home.css';
 @import './pages/menu.css';
