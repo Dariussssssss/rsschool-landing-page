@@ -5,42 +5,50 @@ body {
   transition: background-color var(--transition), color var(--transition);
 }
 
+.second-family {
+  font-family: var(--second-family);
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
 .text-accent {
   font-style: italic;
   color: var(--text-accent);
 }
 
-.heading-hero {
+.hero__title {
   font-size: 72px;
   font-weight: 600;
   line-height: 105%;
 }
 
-.heading-section {
+.section__title {
   font-size: 60px;
   font-weight: 600;
   line-height: 125%;
+  letter-spacing: 2px;
 }
 
-.heading-modal {
+.small__title {
   font-size: 24px;
   font-weight: 600;
   line-height: 125%;
 }
 
-.heading-sub{
+.sub__title {
   font-size: 42px;
   font-weight: 600;
   line-height: 115%;
 }
 
-.heading-card {
-  font-size: 32px;
+.card__title {
+  font-size: 24px;
   font-weight: 600;
   line-height: 125%;
 }
 
 .link {
+  color: currentColor;
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;

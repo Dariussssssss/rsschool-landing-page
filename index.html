@@ -41,7 +41,7 @@
   </div>
 </header>
 <main>
-  <div class="main__wrapper container">
+  <div class="container">
     <section class="hero">
       <video
         class="hero__video"
@@ -70,71 +70,130 @@
     </section>
     <section class="favorite-coffee" id="favorite-coffee">
       <div class="favorite-coffee__wrapper">
-        <h2 class="section__title">Choose your favorite coffee</h2>
+        <h2 class="section__title favorite-coffee__title">Choose your <span
+          class="text-accent second-family">favorite</span> coffee</h2>
         <div class="slider">
-          <div class="slider__item">
-            <div class="slider__button">
-              <button class="button__left"></button>
-              <button class="button__right"></button>
-            </div>
-            <div class="card">
-              <img src="src/assets/img/slider/coffee-slider-1.png" alt="coffee" class="card__img">
-              <p class="card__title">S’mores Frappuccino</p>
-              <p class="card__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before
-                being topped with oat milk.</p>
-              <p class="card__price">$5.50</p>
-            </div>
-            <div class="slider__controls"></div>
+          <button class="round__button prev button" type="button" aria-label="Предыдущий слайд">
+            <span class="icon icon--arrow arrow-left" aria-hidden="true"></span>
+          </button>
+          <div class="slider__viewport">
+            <ul class="slider__track">
+              <li class="slider__slide">
+                <article class="card">
+                  <img src="src/assets/img/slider/coffee-slider-1.png" alt="coffee" class="card__img">
+                  <p class="card__title">S’mores Frappuccino</p>
+                  <p class="card__text text-body">This new drink takes an espresso and mixes it with brown sugar and
+                    cinnamon before
+                    being topped with oat milk.</p>
+                  <p class="card__price card__title">$5.50</p>
+                </article>
+              </li>
+            </ul>
           </div>
+          <button class="round__button next button" type="button" aria-label="Следующий слайд">
+            <span class="icon icon--arrow arrow-right" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="slider__controls" role="tablist" aria-label="Слайды">
+          <button class="slider__control slider__control--active" type="button" role="tab" aria-label="Слайд 1">
+            <span class="slider__progress"></span>
+          </button>
+          <button class="slider__control" type="button" role="tab" aria-label="Слайд 2">
+            <span class="slider__progress"></span>
+          </button>
+          <button class="slider__control" type="button" role="tab" aria-label="Слайд 3">
+            <span class="slider__progress"></span>
+          </button>
         </div>
       </div>
     </section>
     <section class="about" id="about">
       <div class="about__wrapper">
-        <h2 class="section__text">Resource is the perfect and cozy place where you can enjoy a variety of hot beverages,
+        <h2 class="section__title">Resource is <span class="text-accent second-family">the perfect and cozy place</span>
+          where you can enjoy a variety of hot
+          beverages,
           relax, catch up with friends, or get some work done.</h2>
         <ul class="about__list">
-          <li class="about__item"><img src="src/assets/img/about/about-1.jpg" alt="woman with cup of coffee"
-                                       class="about__img"></li>
-          <li class="about__item"><img src="src/assets/img/about/about-2.jpg" alt="man with cup of coffee"
-                                       class="about__img"></li>
-          <li class="about__item"><img src="src/assets/img/about/about-3.jpg" alt="cup of coffee" class="about__img">
+          <li class="about__item about__item--tall"><img src="src/assets/img/about/about-1.jpg"
+                                                         alt="woman with cup of coffee"
+                                                         class="about__img"></li>
+          <li class="about__item about__item--short"><img src="src/assets/img/about/about-2.jpg"
+                                                          alt="man with cup of coffee"
+                                                          class="about__img"></li>
+          <li class="about__item about__item--short"><img src="src/assets/img/about/about-3.jpg" alt="cup of coffee"
+                                                          class="about__img">
           </li>
-          <li class="about__item"><img src="src/assets/img/about/about-4.jpg" alt="spouse with cup of coffee"
-                                       class="about__img"></li>
+          <li class="about__item about__item--tall"><img src="src/assets/img/about/about-4.jpg"
+                                                         alt="spouse with cup of coffee"
+                                                         class="about__img"></li>
         </ul>
       </div>
     </section>
     <section class="mobile-app" id="mobile-app">
       <div class="mobile-app__wrapper">
-        <h2 class="section__title">Download our app<br> to start ordering</h2>
-        <p class="text">Download the Resource app today and experience the comfort of ordering your favorite coffee from
-          wherever you are</p>
-        <div class="mobile-app__button">
-          <button class="apple"></button>
-          <button class="google"></button>
+        <div class="mobile-app__content">
+          <h2 class="section__title"><span class="text-accent second-family">Download</span> our app to&nbsp;start ordering</h2>
+          <p class="text">Download the Resource app today and experience the comfort of ordering your favorite coffee
+            from
+            wherever you are</p>
+          <div class="mobile-app__buttons">
+            <a href="https://www.apple.com/app-store/" class="apple button" target="_blank">
+              <span class="icon icon--apple" aria-hidden="true"></span>
+              <span class="store-label">Available on the</span>
+              <span class="store-brand">App Store</span>
+            </a>
+            <a href="https://play.google.com/store/apps/" class="google button" target="_blank">
+              <span class="icon icon--google" aria-hidden="true"></span>
+              <span class="store-label">Available on the</span>
+              <span class="store-brand">Google Play</span>
+            </a>
+          </div>
         </div>
+        <img src="src/assets/img/mobile-screens.png" alt="Mobile app" class="mobile-app__img">
       </div>
     </section>
   </div>
 </main>
-<footer>
-  <div class="footer__wrapper container" id="contact">
-    <div class="footer__content">
-      <h2 class="footer__title">
-        Sip, Savor, Smile. It’s coffee time!
-      </h2>
-      <div class="social-media">
-        <a href="#" class="twitter"></a>
-        <a href="#" class="instagram"></a>
-        <a href="#" class="facebook"></a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper" id="contact">
+      <div class="footer__content">
+        <h2 class="footer__title section__title">
+          Sip, Savor, Smile. <span class="text-accent second-family">It’s coffee time!</span>
+        </h2>
+        <div class="social-media">
+          <a href="#" class="social-media__button round__button button">
+            <span class="icon icon--twitter icon--media" aria-hidden="true"></span>
+          </a>
+          <a href="#" class="social-media__button round__button button">
+            <span class="icon icon--instagram icon--media" aria-hidden="true"></span>
+          </a>
+          <a href="#" class="social-media__button round__button button">
+            <span class="icon icon--facebook icon--media" aria-hidden="true"></span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="contacts">
-      <p>Contact us</p>
-      <p>8558 Green Rd., LA</p>
-      <p>+1 (603) 555-0123</p>
-      <p>Mon–Sat: 9:00–23:00</p>
+      <div class="contacts">
+        <h3 class="contacts__title small__title">Contact us</h3>
+        <address class="contacts__block">
+          <ul class="contacts__list">
+            <li class="contacts__item text-body">
+              <span class="icon icon--pin-alt icon--address"></span><a
+              href="https://www.google.com/maps/search/?api=1&query=8558+Green+Rd+Haughton+LA" target="_blank"
+              rel="noopener noreferrer" class="link text-body">
+              8558 Green Rd., LA
+            </a>
+            </li>
+            <li class="contacts__item text-body">
+              <span class="icon icon--phone icon--address"></span><a href="tel:+16035550123" class="link text-body">+1
+              (603) 555-0123</a>
+            </li>
+            <li class="contacts__item text-body"><span class="icon icon--clock icon--address"></span> Mon–Sat:
+              9:00–23:00
+            </li>
+          </ul>
+        </address>
+      </div>
     </div>
   </div>
 </footer>

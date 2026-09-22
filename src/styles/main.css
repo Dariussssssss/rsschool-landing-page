@@ -5,6 +5,7 @@
 
 @import './layout/container.css';
 @import './layout/header.css';
+@import './layout/footer.css';
 
 @import './components/icons.css';
 @import './components/button.css';

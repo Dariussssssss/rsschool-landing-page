@@ -6,7 +6,9 @@
   <title>Menu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="src/assets/icons/coffee-cup.svg">
   <link rel="stylesheet" href="src/styles/main.css">
 </head>
@@ -16,20 +18,25 @@
     <a href="index.html" class="logo" aria-label="Resource Coffee House — на главную"></a>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Favorite coffee</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Mobile app</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+        <li class="nav__item"><a href="index.html#favorite-coffee" class="nav__link link">Favorite coffee</a></li>
+        <li class="nav__item"><a href="index.html#about" class="nav__link link">About</a></li>
+        <li class="nav__item"><a href="index.html#mobile-app" class="nav__link link">Mobile app</a></li>
+        <li class="nav__item"><a href="index.html#contact" class="nav__link link">Contact us</a></li>
       </ul>
     </nav>
     <div class="header__actions">
       <div class="theme">
-        <span></span><span></span>
+        <button class="theme-toggle theme-toggle--light" type="button" aria-label="Светлая тема">
+          <span class="icon icon--sun" aria-hidden="true"></span>
+        </button>
+        <button class="theme-toggle theme-toggle--dark" type="button" aria-label="Тёмная тема">
+          <span class="icon icon--moon" aria-hidden="true"></span>
+        </button>
       </div>
-      <div class="burger-menu">
+      <a href="menu.html" class="menu-link link">
         <span>Menu</span>
-        <span></span>
-      </div>
+        <span class="icon icon--coffee-cup menu-link__icon" aria-hidden="true"></span>
+      </a>
     </div>
   </div>
 </header>
@@ -73,23 +80,46 @@
     </section>
   </div>
 </main>
-<footer>
-  <div class="footer__wrapper container">
-    <div class="footer__content">
-      <h2 class="footer__title">
-        Sip, Savor, Smile. It’s coffee time!
-      </h2>
-      <div class="social-media">
-        <a href="#" class="twitter"></a>
-        <a href="#" class="instagram"></a>
-        <a href="#" class="facebook"></a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper" id="contact">
+      <div class="footer__content">
+        <h2 class="footer__title section__title">
+          Sip, Savor, Smile. <span class="text-accent second-family">It’s coffee time!</span>
+        </h2>
+        <div class="social-media">
+          <a href="#" class="social-media__button round__button button">
+            <span class="icon icon--twitter icon--media" aria-hidden="true"></span>
+          </a>
+          <a href="#" class="social-media__button round__button button">
+            <span class="icon icon--instagram icon--media" aria-hidden="true"></span>
+          </a>
+          <a href="#" class="social-media__button round__button button">
+            <span class="icon icon--facebook icon--media" aria-hidden="true"></span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="contacts">
-      <p>Contact us</p>
-      <p>8558 Green Rd.,  LA</p>
-      <p>+1 (603) 555-0123</p>
-      <p>Mon–Sat: 9:00–23:00</p>
+      <div class="contacts">
+        <h3 class="contacts__title small__title">Contact us</h3>
+        <address class="contacts__block">
+          <ul class="contacts__list">
+            <li class="contacts__item text-body">
+              <span class="icon icon--pin-alt icon--address"></span><a
+              href="https://www.google.com/maps/search/?api=1&query=8558+Green+Rd+Haughton+LA" target="_blank"
+              rel="noopener noreferrer" class="link text-body">
+              8558 Green Rd., LA
+            </a>
+            </li>
+            <li class="contacts__item text-body">
+              <span class="icon icon--phone icon--address"></span><a href="tel:+16035550123" class="link text-body">+1
+              (603) 555-0123</a>
+            </li>
+            <li class="contacts__item text-body"><span class="icon icon--clock icon--address"></span> Mon–Sat:
+              9:00–23:00
+            </li>
+          </ul>
+        </address>
+      </div>
     </div>
   </div>
 </footer>

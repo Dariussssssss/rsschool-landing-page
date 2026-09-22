@@ -25,3 +25,54 @@
   -webkit-mask-image: url('../../assets/icons/moon.svg');
   mask-image: url('../../assets/icons/moon.svg');
 }
+
+.arrow-left {
+  -webkit-mask-image: url('../../assets/icons/arrow-left.svg');
+  mask-image: url('../../assets/icons/arrow-left.svg');
+}
+
+.arrow-right {
+  -webkit-mask-image: url('../../assets/icons/arrow-right.svg');
+  mask-image: url('../../assets/icons/arrow-right.svg');
+}
+
+.icon--apple {
+  -webkit-mask-image: url('../../assets/icons/apple.svg');
+  mask-image: url('../../assets/icons/apple.svg');
+}
+
+.icon--google {
+  -webkit-mask-image: url('../../assets/icons/google.svg');
+  mask-image: url('../../assets/icons/google.svg');
+}
+
+.icon--twitter {
+  -webkit-mask-image: url('../../assets/icons/twitter.svg');
+  mask-image: url('../../assets/icons/twitter.svg');
+}
+
+.icon--instagram {
+  -webkit-mask-image: url('../../assets/icons/instagram.svg');
+  mask-image: url('../../assets/icons/instagram.svg');
+}
+
+.icon--facebook {
+  -webkit-mask-image: url('../../assets/icons/facebook.svg');
+  mask-image: url('../../assets/icons/facebook.svg');
+}
+
+.icon--clock {
+  -webkit-mask-image: url('../../assets/icons/clock.svg');
+  mask-image: url('../../assets/icons/clock.svg');
+}
+
+.icon--pin-alt {
+  -webkit-mask-image: url('../../assets/icons/pin-alt.svg');
+  mask-image: url('../../assets/icons/pin-alt.svg');
+}
+
+.icon--phone {
+  -webkit-mask-image: url('../../assets/icons/phone.svg');
+  mask-image: url('../../assets/icons/phone.svg');
+}
+
