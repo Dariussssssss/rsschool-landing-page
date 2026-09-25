@@ -6,14 +6,10 @@
   gap: 20px;
 }
 
-.logo {
-  display: block;
-  min-width: 100px;
+.logo__svg {
+  width: 100px;
   height: 60px;
-  background-image: url('../../assets/icons/logo.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  display: block;
 }
 
 .nav__list {

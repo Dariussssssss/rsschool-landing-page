@@ -5,17 +5,17 @@
 }
 
 body {
-  font-family: "Arimo", sans-serif;
   line-height: 1.5;
   min-height: 100vh;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:focus-visible {
-  outline: 2px solid var(--pink);
+  outline: 2px solid var(--text-accent);
   outline-offset: 3px;
 }
 
@@ -26,4 +26,9 @@ ul, ol {
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
 }

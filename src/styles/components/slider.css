@@ -71,7 +71,7 @@
   border-radius: inherit;
   transform-origin: left;
   transform: scaleX(0);
-  transition: transform 0.1s linear;
+  transition: transform 0.5s linear;
 }
 
 .slider__control--active .slider__progress {

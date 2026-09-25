@@ -25,8 +25,9 @@
   gap: 12px;
 }
 
-.social-media__button {
+.social-media__button .icon--media {
   color: var(--text-inverse);
+  transition: 0.5s ease;
 }
 
 .icon--media {
@@ -67,8 +68,11 @@
 
 @media (hover: hover) and (pointer: fine) {
   .social-media__button:hover {
+    background-color: var(--bg-page);
+    border-color: var(--bg-page);
+  }
+
+  .social-media__button:hover .icon--media {
     color: var(--text-primary);
-    background-color: var(--border-primary);
-    border-color: var(--border-primary);
   }
 }

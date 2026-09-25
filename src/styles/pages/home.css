@@ -53,7 +53,7 @@
   padding: 20px 78px;
   width: 200px;
   height: 64px;
-  background: var(--text-inverse);
+  background: var(--bg-page);
 }
 
 .menu-link--lg .menu-link__icon {
@@ -139,7 +139,7 @@
   flex-shrink: 1;
 }
 
-.mobile-app__content .section text {
+.mobile-app__content .text {
   text-wrap: pretty;
 }
 .mobile-app__buttons{
@@ -212,7 +212,7 @@
   }
 
   .hero {
-    background-image: url('../../assets/img/container.png');
+    background-image: url('../../assets/img/index/container.png');
     background-size: cover;
     background-position: center;
   }
