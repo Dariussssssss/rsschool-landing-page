@@ -1,3 +1,3 @@
-import { initTheme } from './modules/theme.js';
+import {initTheme} from './modules/theme.js';
 
 initTheme();
