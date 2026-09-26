@@ -51,6 +51,7 @@
 .active-category {
   color: var(--text-inverse);
   background-color: var(--bg-container);
+  border-color: var(--bg-container);
 }
 
 .active-category .filter__wrapper {
