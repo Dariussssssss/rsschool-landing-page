@@ -12,11 +12,15 @@ export function renderCards(category) {
   }
 
   container.innerHTML = filtered.map(p => `
-<article class="card">
-<img src="./src/assets/img/menu/${p.category}/${p.image}" alt="${p.category}" class="card__img">
-<p class="card__title">${p.name}</p>
-<p class="card__text">${p.description}</p>
-<p class="card__price">$${p.price}</p>
+<article class="menu-card">
+<div class="menu-card__img-wrapper"><img src="./src/assets/img/menu/${p.category}/${p.image}" alt="${p.category}" class="menu-card__img"></div>
+<div class="menu-card__content-wrapper">
+<div class="menu-card__info-wrapper">
+<p class="menu-card__title card__title">${p.name}</p>
+<p class="menu-card__text text-body">${p.description}</p>
+</div>
+<p class="menu-card__price card__title">$${p.price}</p>
+</div>
 </article>
 `).join('');
 }
