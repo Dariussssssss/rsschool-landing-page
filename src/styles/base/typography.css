@@ -1,0 +1,75 @@
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.second-family {
+  font-family: var(--second-family);
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.text-accent {
+  font-style: italic;
+  color: var(--text-accent);
+}
+
+.hero__title {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+}
+
+.section__title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 2px;
+}
+
+.small__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.sub__title {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 115%;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.link {
+  color: currentColor;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.text-caption {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+

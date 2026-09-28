@@ -1,0 +1,49 @@
+:root {
+  /* Лого */
+  --logo-accent: #b0907a;
+  --logo-text: #403f3d;
+
+  /* Фоны */
+  --bg-page: #e1d4c9;
+  --bg-container: #665f55;
+  --bg-overlay: rgba(64, 63, 61, 0.8);
+  --bg-modal: #e1d4c9;
+  --bg-modal-control: #665f55;
+
+  /* Текст */
+  --text-primary: #403f3d;
+  --text-inverse: #e1d4c9;
+  --text-accent: #b0907a;
+
+  /* Границы */
+  --border-primary: #c1b6ad;
+  --border-inverse: #665f55;
+  --border-bottom-hovered: #403f3d;
+
+  /* Шрифты */
+  --font-family: "Inter", sans-serif;
+  --second-family: "Manrope", sans-serif;
+
+  /* ===== Прочее ===== */
+  --radius: 8px;
+  --transition: color 0.2s ease;
+  --transition-border: border-color 0.5s ease;
+}
+
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --bg-page: #292826;*/
+/*    --bg-container: #403f3d;*/
+/*    --bg-overlay: rgba(41, 40, 38, 0.8);*/
+/*    --bg-modal: var(--bg-container);*/
+/*    --bg-modal-control: var(--bg-page);*/
+
+/*    --text-primary: #e1d4c9;*/
+/*    --text-inverse: #e1d4c9;*/
+/*    --text-accent: #b0907a;*/
+
+/*    --border-primary: #665f55;*/
+/*    --border-inverse: #c1b6ad;*/
+/*  }*/
+/*}*/
