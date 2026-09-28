@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
-<header>
+<header class="header" id="header">
   <div class="header__wrapper container">
     <a href="index.html" class="logo" aria-label="Resource Coffee House — на главную">
       <svg class="logo__svg" width="100" height="60" viewBox="0 0 100 60" fill="none"
@@ -95,17 +95,43 @@
           <span class="icon icon--moon" aria-hidden="true"></span>
         </button>
       </div>
-      <a href="menu.html" class="menu-link link">
+      <a href="menu.html" class="menu-link link menu-link-desktop is-active">
         <span>Menu</span>
         <span class="icon icon--coffee-cup menu-link__icon" aria-hidden="true"></span>
       </a>
+      <button class="burger button" type="button" aria-label="Открыть меню" aria-expanded="false"
+              aria-controls="mobile-menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
     </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+
+  <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Главное меню">
+
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list">
+        <li><a href="#favorite-coffee" class="mobile-menu__link text-mobile-menu" data-close-menu>Favorite coffee</a>
+        </li>
+        <li><a href="#about" class="mobile-menu__link text-mobile-menu" data-close-menu>About</a></li>
+        <li><a href="#mobile-app" class="mobile-menu__link text-mobile-menu" data-close-menu>Mobile app</a></li>
+        <li><a href="#contact" class="mobile-menu__link text-mobile-menu" data-close-menu>Contact us</a></li>
+      </ul>
+    </nav>
+
+    <a href="menu.html" class="menu-link button mobile-menu__cta" data-close-menu>
+      <span>Menu</span>
+      <span class="icon icon--coffee-cup menu-link__icon" aria-hidden="true"></span>
+    </a>
+  </div>
+</div>
 <main>
   <div class="main__wrapper container">
     <section class="menu">
-      <h1 class="menu__title section__title">Behind each of our cups hides and <span class="text-accent">amazing surprise</span></h1>
+      <h1 class="menu__title section__title">Behind each of our cups hides and <span class="text-accent">amazing surprise</span>
+      </h1>
       <div class="buttons__container">
         <button class="buttons__filter button" data-category="coffee">
           <span class="filter__wrapper">
@@ -175,10 +201,10 @@
 </footer>
 <div id="modal" class="modal-overlay hidden">
   <div class="modal-window">
-  <span id="close-btn" class="close-cross">&times;</span>
-  <h2></h2>
-  <p></p>
-</div>
+    <span id="close-btn" class="close-cross">&times;</span>
+    <h2></h2>
+    <p></p>
+  </div>
 </div>
 <script type="module" src="src/scripts/menu.js"></script>
 </body>

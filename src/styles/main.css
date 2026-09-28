@@ -12,6 +12,7 @@
 @import './components/menu_button.css';
 @import './components/slider.css';
 @import './components/card.css';
+@import './components/burger.css';
 
 @import './pages/home.css';
 @import './pages/menu.css';

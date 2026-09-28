@@ -40,6 +40,15 @@
   transition: transform 0.5s ease;
 }
 
+.menu-link.is-active {
+  cursor: default;
+  pointer-events: none;
+}
+
+.menu-link.is-active::after {
+  transform: scaleX(1);
+}
+
 .header__actions {
   display: inline-flex;
   align-items: center;

@@ -29,22 +29,5 @@
   --transition: color 0.2s ease;
   --transition-border: border-color 0.5s ease;
   --autoplay-delay: 7000ms;
+  --header-height: 100px;
 }
-
-
-/*@media (prefers-color-scheme: dark) {*/
-/*  :root {*/
-/*    --bg-page: #292826;*/
-/*    --bg-container: #403f3d;*/
-/*    --bg-overlay: rgba(41, 40, 38, 0.8);*/
-/*    --bg-modal: var(--bg-container);*/
-/*    --bg-modal-control: var(--bg-page);*/
-
-/*    --text-primary: #e1d4c9;*/
-/*    --text-inverse: #e1d4c9;*/
-/*    --text-accent: #b0907a;*/
-
-/*    --border-primary: #665f55;*/
-/*    --border-inverse: #c1b6ad;*/
-/*  }*/
-/*}*/
