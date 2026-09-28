@@ -8,6 +8,7 @@
 .slider__viewport {
   flex: 1;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .slider__track {
@@ -15,7 +16,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
+  will-change: transform;
 }
 
 .slider__slide {
@@ -61,21 +63,32 @@
   border-radius: 100px;
   cursor: pointer;
   overflow: hidden;
-  transition: background-color 0.3s ease;
+}
+
+@keyframes progress-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .slider__progress {
   position: absolute;
   inset: 0;
-  background-color: var(--bg-container);
+  background-color: var(--text-primary);
   border-radius: inherit;
   transform-origin: left;
   transform: scaleX(0);
-  transition: transform 0.5s linear;
 }
 
 .slider__control--active .slider__progress {
-  transform: scaleX(1);
+  animation: progress-fill var(--autoplay-delay, 7000ms) linear;
+}
+
+.slider--paused .slider__control--active .slider__progress {
+  animation-play-state: paused;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -83,5 +96,16 @@
     color: var(--text-inverse);
     background-color: var(--bg-container);
     border-color: var(--bg-container);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider__track {
+    transition: none;
+  }
+
+  .slider__control--active .slider__progress {
+    animation: none;
+    transform: scaleX(1);
   }
 }
